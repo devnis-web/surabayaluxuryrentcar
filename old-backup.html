@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Surabaya Luxury RentCar menyediakan layanan rental mobil, wedding car, perjalanan wisata, dan transportasi profesional."
+    />
+    <title>Surabaya Luxury RentCar | Rental Mobil & Travel</title>
+
+    <!-- favicon png -->
+    <link rel="icon" type="image/png" href="img/logo-new.png" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .hero-bg {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.48)), url("img/bg-home.png");
+        background-position: center;
+        background-size: cover;
+      }
+      .shadow-card {
+        box-shadow: 0 2px 9px rgba(0, 0, 0, 0.23);
+      }
+      .car-track {
+        scrollbar-width: none;
+      }
+      .car-track::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-slate-800">
+    <!-- Navbar -->
+    <header class="absolute inset-x-0 top-0 z-30 text-white">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 lg:px-10">
+        <a href="#home" class="flex items-center gap-2" aria-label="Surabaya Luxury RentCar beranda">
+          <img src="img/logo-new.png" alt="Logo Surabaya Luxury RentCar" class="h-10 w-10 rounded-full object-cover" />
+          <span class="leading-tight">
+            <span class="block text-sm font-extrabold tracking-wide text-red-500">PT. SURABAYA LUXURY RENTCAR</span>
+            <span class="block text-[10px] font-semibold tracking-widest text-white">SURABAYA LUXURY RENTCAR</span>
+          </span>
+        </a>
+
+        <button
+          id="menuButton"
+          class="rounded border border-white/40 px-3 py-2 md:hidden"
+          aria-label="Buka menu"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div
+          id="navMenu"
+          class="absolute left-0 right-0 top-full hidden flex-col gap-1 bg-slate-950/95 px-5 py-4 text-sm font-semibold md:static md:flex md:flex-row md:items-center md:gap-8 md:bg-transparent md:p-0"
+        >
+          <a class="nav-link py-2 text-red-400 hover:text-red-300" href="#home">HOME</a>
+          <a class="nav-link py-2 hover:text-red-300" href="#tentang">TENTANG KAMI</a>
+          <a class="nav-link py-2 hover:text-red-300" href="#layanan">SERVICE</a>
+          <a class="nav-link py-2 hover:text-red-300" href="#contact">CONTACT</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero-bg flex min-h-screen items-center justify-center px-5 pt-20 text-center text-white">
+      <div class="max-w-xl">
+        <p class="mb-3 text-xs font-bold uppercase tracking-[.25em] text-red-300">Surabaya Luxury Trans</p>
+        <h1 class="text-2xl font-extrabold leading-snug drop-shadow md:text-4xl">
+          Sewa Di Sini Unit Milik Sendiri<br />
+          Buktikan Unitnya<br />
+          Buktikan Harganya<br />
+          Buktikan Servicenya
+        </h1>
+        <p class="mx-auto mt-5 max-w-lg text-sm leading-6 text-white/85">
+          Solusi transportasi nyaman untuk perjalanan bisnis, wisata, acara keluarga, dan kebutuhan spesial Anda.
+        </p>
+        <a
+          href="#layanan"
+          class="mt-6 inline-flex items-center gap-2 bg-red-500 px-6 py-3 text-sm font-bold tracking-wide transition hover:bg-red-600"
+        >
+          LIHAT LAYANAN <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <main>
+      <!-- Tentang + video -->
+      <section id="tentang" class="mx-auto grid max-w-6xl gap-9 px-5 py-12 md:grid-cols-2 md:px-8">
+        <div class="text-center">
+          <h2 class="mb-4 text-xl font-bold">Sekilas Tentang Kami</h2>
+          <p class="text-sm leading-7 text-slate-600">
+            <strong class="text-slate-800">Surabaya Luxury Trans</strong> adalah penyedia jasa sewa mobil yang melayani
+            kebutuhan transportasi untuk perjalanan pribadi, bisnis, wisata, dan berbagai acara. Kami menyediakan
+            pilihan kendaraan yang terawat dengan pelayanan profesional agar perjalanan Anda terasa nyaman, aman, dan
+            menyenangkan.
+          </p>
+          <p class="mt-3 text-sm leading-7 text-slate-600">
+            Dengan pilihan armada yang beragam serta layanan yang fleksibel, kami siap membantu kebutuhan perjalanan
+            Anda. Hubungi tim kami untuk informasi unit, harga, dan ketersediaan.
+          </p>
+        </div>
+
+        <!-- Menampilkan video YouTube -->
+        <div class="mx-auto w-full max-w-xl overflow-hidden rounded-xl shadow-md">
+          <div class="relative aspect-video w-full">
+            <iframe
+              class="absolute inset-0 h-full w-full"
+              src="https://www.youtube.com/embed/9PxIGmtAP2c?si=onlr2hoxyGCnXBR7"
+              title="Video Surabaya Luxury Trans"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <!-- Paket Bromo Sunrise -->
+          <div class="mt-5 rounded-xl border border-orange-100 bg-orange-50 p-5">
+            <h3 class="mb-2 text-lg font-bold text-slate-800">Paket Bromo Sunrise</h3>
+
+            <p class="mb-4 text-sm leading-6 text-slate-600">
+              Nikmati pengalaman melihat matahari terbit di Gunung Bromo dengan perjalanan yang nyaman dari Surabaya.
+            </p>
+
+            <ul class="mb-5 space-y-2 text-sm text-slate-700">
+              <li class="flex items-start gap-2">
+                <span class="text-orange-500">✓</span>
+                Start dari Surabaya
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-orange-500">✓</span>
+                Mobil dan sopir
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-orange-500">✓</span>
+                BBM
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-orange-500">✓</span>
+                Tiket masuk 4 titik spot
+              </li>
+            </ul>
+
+            <a
+              href="https://wa.me/628822566888?text=Halo%20Surabaya%20Luxury%20Trans%2C%20saya%20ingin%20memesan%20Paket%20Bromo%20Sunrise."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex w-full items-center justify-center rounded-lg bg-orange-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-orange-600"
+            >
+              Pesan Sekarang
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Layanan cards -->
+      <section id="layanan" class="mx-auto max-w-6xl px-5 py-8 md:px-8">
+        <div class="grid gap-8 md:grid-cols-2">
+          <article class="text-center">
+            <img
+              class="h-64 w-full object-cover md:h-80"
+              src="img/alphard-weding.png"
+              alt="Mobil untuk wedding dan acara khusus"
+              loading="lazy"
+            />
+            <h3 class="mt-5 text-lg font-bold">Wedding Package</h3>
+            <p class="mt-2 text-sm text-slate-500">Pilihan mobil untuk hari spesial Anda.</p>
+            <a
+              href="https://wa.me/628822566888?text=Halo%20Surabaya%20Luxury%20Trans,%20saya%20tertarik%20untuk%20membahas%20wedding%20package."
+              target="_blank"
+              class="mt-3 inline-block bg-red-500 px-8 py-3 text-xs font-bold tracking-widest text-white hover:bg-red-600"
+              >TANYA PAKET</a
+            >
+          </article>
+          <article class="text-center">
+            <img
+              class="h-64 w-full object-cover md:h-80"
+              src="img/alphard-mewah.png"
+              alt="Armada mobil rental"
+              loading="lazy"
+            />
+            <h3 class="mt-5 text-lg font-bold">Sewa Mobil Mewah, Reguler & Minibus</h3>
+            <p class="mt-2 text-sm text-slate-500">Tersedia berbagai macam tipe kendaraan.</p>
+            <a
+              href="#armada"
+              class="mt-3 inline-block bg-red-500 px-8 py-3 text-xs font-bold tracking-widest text-white hover:bg-red-600"
+              >PILIH SEKARANG</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <!-- Why us -->
+      <section class="mx-auto max-w-6xl px-5 py-14 md:px-8">
+        <div class="mb-8 text-center">
+          <h2 class="inline-block border-b-2 border-red-500 px-2 pb-3 text-xl font-bold">Mengapa Memilih Kami</h2>
+        </div>
+        <div class="grid gap-5 md:grid-cols-3">
+          <article class="shadow-card p-6 text-center">
+            <i class="fa-solid fa-certificate text-4xl text-red-500"></i>
+            <h3 class="mt-4 text-lg font-bold">Izin & Layanan Jelas</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">
+              Informasi layanan yang transparan untuk membantu perjalanan Anda terasa lebih tenang.
+            </p>
+          </article>
+          <article class="shadow-card p-6 text-center">
+            <i class="fa-solid fa-id-card text-4xl text-red-500"></i>
+            <h3 class="mt-4 text-lg font-bold">Driver Berpengalaman</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">
+              Didukung pengemudi yang profesional dan memahami kebutuhan perjalanan pelanggan.
+            </p>
+          </article>
+          <article class="shadow-card p-6 text-center">
+            <i class="fa-solid fa-plane-departure text-4xl text-red-500"></i>
+            <h3 class="mt-4 text-lg font-bold">Antar-Jemput Bandara</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">
+              Layanan perjalanan yang fleksibel untuk kebutuhan bandara, hotel, dan berbagai tujuan.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Fleet Catalog & Filter -->
+      <section id="armada" class="bg-gray-50 py-16 md:py-20">
+        <div class="mx-auto max-w-7xl px-5 md:px-8">
+          <!-- Heading -->
+          <div class="mx-auto mb-8 max-w-2xl text-center">
+            <span class="text-sm font-bold uppercase tracking-widest text-red-500"> Armada Kami </span>
+            <h2 class="mt-2 text-3xl font-extrabold text-gray-900 md:text-4xl">Pilihan Armada Terbaik</h2>
+            <p class="mt-3 text-sm leading-6 text-gray-600 md:text-base">
+              Temukan kendaraan yang sesuai dengan kebutuhan perjalanan Anda. Pilih kategori dan hubungi kami untuk
+              pemesanan.
+            </p>
+          </div>
+
+          <!-- Filter Buttons -->
+          <div class="mb-10 flex flex-wrap justify-center gap-2 sm:gap-3">
+            <button
+              data-filter="all"
+              class="fleet-filter rounded-full bg-red-500 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-red-600"
+            >
+              Semua Armada
+            </button>
+
+            <button
+              data-filter="wedding"
+              class="fleet-filter rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 transition hover:border-red-500 hover:text-red-500"
+            >
+              Wedding
+            </button>
+
+            <button
+              data-filter="mewah"
+              class="fleet-filter rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 transition hover:border-red-500 hover:text-red-500"
+            >
+              Mewah
+            </button>
+
+            <button
+              data-filter="reguler"
+              class="fleet-filter rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 transition hover:border-red-500 hover:text-red-500"
+            >
+              Reguler
+            </button>
+
+            <button
+              data-filter="minibus"
+              class="fleet-filter rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 transition hover:border-red-500 hover:text-red-500"
+            >
+              Minibus
+            </button>
+
+            <button
+              data-filter="big-bus"
+              class="fleet-filter rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 transition hover:border-red-500 hover:text-red-500"
+            >
+              Big Bus
+            </button>
+
+            <button
+              data-filter="medium-bus"
+              class="fleet-filter rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 transition hover:border-red-500 hover:text-red-500"
+            >
+              Medium Bus
+            </button>
+
+            <button
+              data-filter="elf"
+              class="fleet-filter rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 transition hover:border-red-500 hover:text-red-500"
+            >
+              Elf
+            </button>
+          </div>
+
+          <!-- Fleet Grid -->
+          <!-- Fleet Grid: kartu mobil dibuat oleh JavaScript -->
+          <div id="fleetGrid" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Data armada dirender dari JavaScript -->
+          </div>
+
+          <!-- Empty State -->
+          <p id="fleetEmpty" class="hidden py-10 text-center text-gray-500">Armada pada kategori ini belum tersedia.</p>
+
+          <!-- Bottom CTA -->
+          <div class="mt-10 text-center">
+            <p class="mb-4 text-sm text-gray-600">
+              Belum yakin memilih kendaraan? Konsultasikan kebutuhan perjalanan Anda.
+            </p>
+            <a
+              href="https://wa.me/628822566888?text=Halo%20Surabaya%20Luxury%20Trans,%20saya%20ingin%20konsultasi%20tentang%20layanan%20rental%20mobil."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex items-center gap-2 rounded-lg bg-green-600 px-6 py-3 font-semibold text-white transition hover:bg-green-700"
+            >
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              Konsultasi via WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Partnership and payment -->
+      <section class="mx-auto grid max-w-6xl overflow-hidden px-5 pb-10 md:grid-cols-2 md:px-8">
+        <div class="flex min-h-56 flex-col items-center justify-center bg-[#1d5963] p-8 text-center text-white">
+          <h2 class="text-xl font-bold">Menerima Investor dan Kerjasama</h2>
+          <p class="mt-2 max-w-sm text-sm text-white/80">
+            Terbuka untuk kolaborasi dan kemitraan layanan transportasi.
+          </p>
+          <a
+            href="https://wa.me/628822566888?text=Halo%20Surabaya%20Luxury%20Trans,%20saya%20tertarik%20untuk%20membahas%20kerjasama%20atau%20investasi."
+            data-booking="Kerjasama / Investor"
+            class="mt-5 bg-black px-8 py-3 text-xs font-bold tracking-widest hover:bg-slate-800"
+            >HUBUNGI</a
+          >
+        </div>
+        <div class="shadow-card p-7">
+          <h2 class="text-center text-lg font-bold">Rekening Pembayaran</h2>
+          <div class="mx-auto mb-5 mt-3 h-0.5 w-20 bg-sky-700"></div>
+          <div class="space-y-6">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <img src="img/logo-mandiri.webp" alt="Logo Mandiri" class="h-10" />
+              <div class="text-right">
+                <p class="text-2xl font-extrabold tracking-wide">1110026623914</p>
+                <p class="mt-1 text-sm">a/n YESMITA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-neutral-200 px-5 py-10 text-sm text-slate-700">
+      <div class="mx-auto max-w-3xl">
+        <h2 class="mb-3 font-bold">Marketing Office</h2>
+        <p>Jl. H. Syukur VII No.6 Sedati Gede, Kec. Sedati, Kabupaten Sidoarjo Jawa Timur 61256, Indonesia.</p>
+        <p class="mt-1">
+          No. Telp / WA: /
+          <a
+            href="https://wa.me/628822566888?text=Halo%20Surabaya%20Luxury%20Trans,%20saya%20ingin%20bertanya%20tentang%20layanan%20rental%20mobil."
+            class="font-semibold hover:text-red-600"
+            target="_blank"
+            >08822566888</a
+          >
+          /
+          <a
+            href="https://wa.me/628595114888?text=Halo%20Surabaya%20Luxury%20Trans,%20saya%20ingin%20bertanya%20tentang%20layanan%20rental%20mobil."
+            class="font-semibold hover:text-red-600"
+            target="_blank"
+            >08595114888</a
+          >
+        </p>
+        <p class="mt-1">Email: surabayaluxurytrans99@gmail.com</p>
+        <p class="mt-1">Web: www.surabayaluxuryrentcar.com</p>
+        <p class="mt-1 leading-6">
+          Kami juga hadir di kota Jakarta, Solo, Semarang, Jogja, Bandung. Bali, Palembang, Malang, Banyuwangi
+        </p>
+      </div>
+    </footer>
+
+    <div class="border-t border-white bg-white py-4 text-center text-slate-700">
+      <div class="mb-3 flex justify-center gap-5 text-lg">
+        <a href="https://www.facebook.com/bagoes.rend" target="_blank" aria-label="Facebook" class="hover:text-red-500"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.tiktok.com/@surabayaluxurytrans1980"
+          target="_blank"
+          aria-label="TikTok"
+          class="hover:text-red-500"
+          ><i class="fa-brands fa-tiktok"></i
+        ></a>
+        <a href="mailto:surabayaluxurytrans99@gmail.com" target="_blank" aria-label="Email" class="hover:text-red-500"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+      </div>
+      <p class="text-xs">© <span id="year"></span> Surabaya Luxury Trans. All rights reserved.</p>
+    </div>
+
+    <!-- Image Lightbox -->
+    <div
+      id="imageLightbox"
+      class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/90 p-4"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Pratinjau gambar armada"
+    >
+      <!-- Tombol tutup -->
+      <button
+        id="closeLightbox"
+        type="button"
+        class="absolute right-5 top-5 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-3xl text-white transition hover:bg-white/20"
+        aria-label="Tutup gambar"
+      >
+        &times;
+      </button>
+
+      <!-- Gambar besar -->
+      <img id="lightboxImage" src="" alt="" class="max-h-[85vh] max-w-full rounded-lg object-contain shadow-2xl" />
+
+      <!-- Nama mobil -->
+      <p id="lightboxCaption" class="absolute bottom-5 left-4 right-4 text-center text-sm font-medium text-white"></p>
+    </div>
+
+    <!-- Floating WhatsApp -->
+    <a
+      id="whatsappFloat"
+      href="https://wa.me/628822566888?text=Halo%20Surabaya%20Luxury%20Trans,%20saya%20ingin%20bertanya%20tentang%20layanan%20rental%20mobil."
+      target="_blank"
+      rel="noopener"
+      class="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-3xl text-white shadow-xl transition hover:scale-105 hover:bg-green-600"
+      aria-label="Chat WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/data-armada.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

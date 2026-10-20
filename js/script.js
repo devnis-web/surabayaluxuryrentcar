@@ -2,7 +2,7 @@
    KONFIGURASI
 ========================================= */
 
-const WHATSAPP_NUMBER = "6287701355888";
+const WHATSAPP_NUMBER = "628822566888";
 
 /* =========================================
    NAVBAR MOBILE
@@ -34,9 +34,9 @@ if (menuButton && navMenu) {
 
 // Class ditulis lengkap agar mudah dikenali Tailwind.
 const warnaKategori = {
-  wedding: "bg-red-500",
+  wedding: "bg-blue-500",
   mewah: "bg-gray-900",
-  reguler: "bg-blue-600",
+  reguler: "bg-green-600",
   minibus: "bg-emerald-600",
   "big-bus": "bg-purple-600",
   "medium-bus": "bg-indigo-600",
@@ -56,65 +56,64 @@ function renderArmada(data) {
   fleetGrid.innerHTML = data
     .map(
       (mobil) => `
-        <article
-          class="fleet-card overflow-hidden rounded-xl bg-white shadow-md
-                 transition duration-300 hover:-translate-y-1 hover:shadow-xl"
-        >
-          <div class="relative overflow-hidden">
-            <img
-              src="${mobil.gambar}"
-              alt="${mobil.nama}"
-              loading="lazy"
-              data-lightbox="${mobil.gambar}"
-              class="fleet-image h-56 w-full cursor-zoom-in object-cover
-                    transition duration-500 hover:scale-105"
-            />
+      <article
+        class="fleet-card overflow-hidden rounded-xl bg-white shadow-md
+               transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+      >
+        <div class="relative overflow-hidden">
+          <img
+            src="${mobil.gambar}"
+            alt="${mobil.nama}"
+            loading="lazy"
+            data-lightbox="${mobil.gambar}"
+            class="fleet-image h-56 w-full cursor-zoom-in object-cover
+                   transition duration-500 hover:scale-105"
+          />
 
-            <span
-              class="absolute left-4 top-4 rounded-full
-                     ${warnaKategori[mobil.kategori]}
-                     px-3 py-1 text-xs font-bold text-white"
-            >
-              ${mobil.label}
+          <span
+            class="absolute left-4 top-4 rounded-full
+                   ${warnaKategori[mobil.kategori]}
+                   px-3 py-1 text-xs font-bold text-white"
+          >
+            ${mobil.label}
+          </span>
+        </div>
+
+        <div class="p-5">
+          <h3 class="text-lg font-bold text-gray-900">
+            ${mobil.nama}
+          </h3>
+
+          <p class="mt-1 text-sm font-medium text-gray-500">
+            ${mobil.kendaraan}
+          </p>
+
+          <p class="mt-2 text-sm leading-6 text-gray-600">
+            ${mobil.deskripsi}
+          </p>
+
+          <div
+            class="mt-4 flex items-center justify-between gap-3
+                   border-t border-gray-100 pt-4"
+          >
+            <span class="text-sm text-gray-500">
+              <i class="${mobil.icon} mr-1 text-blue-600"></i>
+              ${mobil.fasilitas}
             </span>
-          </div>
 
-          
-          <div class="p-5">
-            <h3 class="text-lg font-bold text-gray-900">
-              ${mobil.nama}
-            </h3>
-
-            <p class="mt-1 text-sm font-medium text-gray-500">
-              ${mobil.kendaraan}
-            </p>
-
-            <p class="mt-2 text-sm leading-6 text-gray-600">
-              ${mobil.deskripsi}
-            </p>
-
-            <div
-              class="mt-4 flex items-center justify-between gap-3
-                     border-t border-gray-100 pt-4"
+            <button
+              type="button"
+              data-rent-id="${mobil.id}"
+              class="shrink-0 rounded-lg bg-blue-600 px-4 py-2.5
+                     text-sm font-semibold text-white
+                     transition hover:bg-blue-700"
             >
-              <span class="text-sm text-gray-500">
-                <i class="${mobil.icon} mr-1 text-red-500"></i>
-                ${mobil.fasilitas}
-              </span>
-
-              <button
-                type="button"
-                data-rent-id="${mobil.id}"
-                class="shrink-0 rounded-lg bg-red-500 px-4 py-2.5
-                       text-sm font-semibold text-white
-                       transition hover:bg-red-600"
-              >
-                Sewa Sekarang
-              </button>
-            </div>
+              Sewa Sekarang
+            </button>
           </div>
-        </article>
-      `,
+        </div>
+      </article>
+    `,
     )
     .join("");
 
@@ -154,9 +153,9 @@ fleetFilters.forEach((button) => {
     fleetFilters.forEach((filter) => {
       const aktif = filter === button;
 
-      filter.classList.toggle("bg-red-500", aktif);
+      filter.classList.toggle("bg-blue-500", aktif);
       filter.classList.toggle("text-white", aktif);
-      filter.classList.toggle("border-red-500", aktif);
+      filter.classList.toggle("border-blue-500", aktif);
 
       filter.classList.toggle("bg-white", !aktif);
       filter.classList.toggle("text-gray-700", !aktif);
