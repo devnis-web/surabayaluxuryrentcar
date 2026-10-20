@@ -9,6 +9,9 @@
     />
     <title>Surabaya Luxury Trans | Rental Mobil & Travel</title>
 
+    <!-- favicon png -->
+    <link rel="icon" type="image/png" href="img/logo.png" />
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Icons -->
@@ -41,10 +44,7 @@
     <header class="absolute inset-x-0 top-0 z-30 text-white">
       <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 lg:px-10">
         <a href="#home" class="flex items-center gap-2" aria-label="Surabaya Luxury Trans beranda">
-          <span
-            class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-red-600 text-xs font-black"
-            >SLT</span
-          >
+          <img src="img/logo.png" alt="Logo Surabaya Luxury Trans" class="h-10 w-10 rounded-full object-cover" />
           <span class="leading-tight">
             <span class="block text-sm font-extrabold tracking-wide text-red-500">PT. SLT</span>
             <span class="block text-[10px] font-semibold tracking-widest text-white">SURABAYA LUXURY TRANS</span>
@@ -110,18 +110,64 @@
           </p>
         </div>
 
-        <!-- menampilkan video -->
-        <div class="relative aspect-video overflow-hidden rounded-lg">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/9PxIGmtAP2c?si=onlr2hoxyGCnXBR7"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+        <!-- Menampilkan video YouTube -->
+        <div class="mx-auto w-full max-w-xl overflow-hidden rounded-xl shadow-md">
+          <div class="relative aspect-video w-full">
+            <iframe
+              class="absolute inset-0 h-full w-full"
+              src="https://www.youtube.com/embed/9PxIGmtAP2c?si=onlr2hoxyGCnXBR7"
+              title="Video Surabaya Luxury Trans"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <!-- Paket Bromo Sunrise -->
+          <div class="mt-5 rounded-xl border border-orange-100 bg-orange-50 p-5">
+            <h3 class="mb-2 text-lg font-bold text-slate-800">Paket Bromo Sunrise</h3>
+
+            <p class="mb-4 text-sm leading-6 text-slate-600">
+              Nikmati pengalaman melihat matahari terbit di Gunung Bromo dengan perjalanan yang nyaman dari Surabaya.
+            </p>
+
+            <ul class="mb-5 space-y-2 text-sm text-slate-700">
+              <li class="flex items-start gap-2">
+                <span class="text-orange-500">✓</span>
+                Start dari Surabaya
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-orange-500">✓</span>
+                Mobil dan sopir
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-orange-500">✓</span>
+                BBM
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-orange-500">✓</span>
+                Tiket masuk 4 titik spot
+              </li>
+            </ul>
+
+            <a
+              href="https://wa.me/6287701355888?text=Halo%20Surabaya%20Luxury%20Trans%2C%20saya%20ingin%20memesan%20Paket%20Bromo%20Sunrise."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex w-full items-center justify-center rounded-lg bg-orange-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-orange-600"
+            >
+              Pesan Sekarang
+            </a>
+          </div>
         </div>
       </section>
 
@@ -412,6 +458,8 @@
     >
       <i class="fa-brands fa-whatsapp"></i>
     </a>
+
+    <script src="js/data-armada.js"></script>
 
     <script src="js/script.js"></script>
   </body>
