@@ -2,7 +2,7 @@
    KONFIGURASI
 ========================================= */
 
-const WHATSAPP_NUMBER = "628822566888";
+const WHATSAPP_NUMBER = "6288225666888";
 
 /* =========================================
    NAVBAR MOBILE
