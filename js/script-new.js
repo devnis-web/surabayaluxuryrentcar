@@ -65,6 +65,7 @@ function renderArmada(data) {
             src="${mobil.gambar}"
             alt="${mobil.nama}"
             loading="lazy"
+            decoding="async"
             data-lightbox="${mobil.gambar}"
             class="fleet-image h-56 w-full cursor-zoom-in object-cover
                    transition duration-500 hover:scale-105"

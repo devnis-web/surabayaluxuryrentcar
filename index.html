@@ -3,15 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Rental Mobil Surabaya dengan Sopir | Surabaya Luxury RentCar</title>
+
     <meta
       name="description"
-      content="Surabaya Luxury RentCar menyediakan layanan rental mobil, wedding car, perjalanan wisata, dan rentcarportasi profesional."
+      content="Cari rental mobil Surabaya untuk perjalanan bisnis, wisata, wedding, dan antar-jemput bandara. Pilihan armada reguler hingga premium. Hubungi Surabaya Luxury RentCar."
     />
-    <title>Surabaya Luxury RentCar | Rental Mobil & Travel</title>
 
-    <!-- favicon png -->
-    <link rel="icon" type="image/png" href="img/logo-new.png" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1d5963" />
 
+    <!-- Canonical: sesuaikan dengan domain utama yang benar-benar digunakan -->
+    <link rel="canonical" href="https://www.surabayaluxuryrentcar.com/" />
+
+    <!-- Open Graph untuk berbagi ke media sosial -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rental Mobil Surabaya | Surabaya Luxury RentCar" />
+    <meta
+      property="og:description"
+      content="Layanan rental mobil untuk wisata, bisnis, wedding, dan berbagai kebutuhan perjalanan di Surabaya."
+    />
+    <meta property="og:url" content="https://www.surabayaluxuryrentcar.com/" />
+    <meta property="og:image" content="https://www.surabayaluxuryrentcar.com/img/bg-new4.png" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:site_name" content="Surabaya Luxury RentCar" />
+
+    <link rel="icon" type="image/png" href="/img/logo-new.png" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- SEO terstruktur: LocalBusiness -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Surabaya Luxury RentCar",
+        "url": "https://www.surabayaluxuryrentcar.com/",
+        "description": "Layanan rental mobil untuk perjalanan bisnis, wisata, wedding, dan berbagai kebutuhan perjalanan.",
+        "telephone": "+6288225666888",
+        "email": "surabayaluxuryrentcar@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Jl. H. Syukur VII No.6, Sedati Gede",
+          "addressLocality": "Sidoarjo",
+          "addressRegion": "Jawa Timur",
+          "postalCode": "61256",
+          "addressCountry": "ID"
+        }
+      }
+    </script>
+
+    <!-- CSS kamu yang lain tetap di sini -->
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Icons -->
@@ -39,6 +83,7 @@
       }
     </style>
   </head>
+
   <body class="bg-white text-slate-800">
     <!-- Navbar -->
     <header class="absolute inset-x-0 top-0 z-30 text-white">
@@ -75,10 +120,12 @@
     <section id="home" class="hero-bg flex min-h-screen items-center justify-center px-5 pt-20 text-center text-white">
       <div class="max-w-xl">
         <p class="mb-3 text-xs font-bold uppercase tracking-[.25em] text-blue-300">Surabaya Luxury RentCar</p>
-        <h1 class="text-2xl font-extrabold leading-snug drop-shadow md:text-4xl">
-          Rental Mobil Surabaya<br />
-          Nyaman untuk Setiap Perjalanan
+
+        <h1 class="text-3xl font-extrabold leading-snug drop-shadow sm:text-4xl md:text-5xl">
+          Rental Mobil Surabaya
+          <span class="mt-2 block text-blue-300"> Nyaman untuk Setiap Perjalanan </span>
         </h1>
+
         <p class="mx-auto mt-5 max-w-lg text-sm leading-6 text-white/85">
           Pilihan rental mobil untuk perjalanan pribadi, kebutuhan bisnis, wisata, antar-jemput bandara, dan acara
           keluarga. Pilih armada yang sesuai dengan kebutuhan perjalanan Anda.
@@ -287,27 +334,13 @@
             >
               Minibus
             </button>
-            
+
             <button
               data-filter="bus"
               class="fleet-filter rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 rentcarition hover:border-blue-600 hover:text-blue-600"
             >
               Bus
             </button>
-
-            <!-- <button
-              data-filter="medium-bus"
-              class="fleet-filter rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 rentcarition hover:border-blue-600 hover:text-blue-600"
-            >
-              Medium Bus
-            </button> -->
-
-            <!-- <button
-              data-filter="elf"
-              class="fleet-filter rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 rentcarition hover:border-blue-600 hover:text-blue-600"
-            >
-              Elf
-            </button> -->
           </div>
 
           <!-- Fleet Grid -->
