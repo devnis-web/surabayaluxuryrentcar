@@ -46,10 +46,10 @@ const armada = [
   {
     id: 5,
     nama: "Mobil Mewah",
-    kendaraan: "Zenix",
+    kendaraan: "Zenix Q",
     kategori: "mewah",
     label: "Mewah",
-    deskripsi: "Zenix Sudah Termasuk Sopir, BBM, Tol & Parkir. Free Snack & Softdrink.",
+    deskripsi: "Zenix Q Sudah Termasuk Sopir, BBM, Tol & Parkir. Free Snack & Softdrink.",
     fasilitas: "Premium",
     icon: "fa-solid fa-star",
     gambar: "img/mewah-new/zenix.png",
@@ -68,10 +68,10 @@ const armada = [
   {
     id: 7,
     nama: "Mobil Mewah",
-    kendaraan: "Zenix",
+    kendaraan: "Zenix G",
     kategori: "mewah",
     label: "Mewah",
-    deskripsi: "Zenix Sudah Termasuk Sopir, BBM, Tol & Parkir. Free Snack & Softdrink.",
+    deskripsi: "Zenix G Sudah Termasuk Sopir, BBM, Tol & Parkir. Free Snack & Softdrink.",
     fasilitas: "Premium",
     icon: "fa-solid fa-star",
     gambar: "img/mewah-new/zenix.png",
@@ -229,5 +229,17 @@ const armada = [
     fasilitas: "Rombongan",
     icon: "fa-solid fa-people-group",
     gambar: "img/minibus-new/grand-premio-luxury.png",
+  },
+  // penambahan armada baru
+  {
+    id: 20,
+    nama: "Mobil Mewah",
+    kendaraan: "Palisade",
+    kategori: "mewah",
+    label: "Mewah",
+    deskripsi: "Palisade Sudah Termasuk Sopir, BBM, Tol & Parkir. Free Snack & Softdrink.",
+    fasilitas: "Premium",
+    icon: "fa-solid fa-star",
+    gambar: "img/mewah-new/palisade.png",
   },
 ];
