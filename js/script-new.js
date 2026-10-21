@@ -38,7 +38,7 @@ const warnaKategori = {
   mewah: "bg-gray-900",
   reguler: "bg-blue-500",
   minibus: "bg-emerald-600",
-//   "big-bus": "bg-purple-600",
+  "bus": "bg-purple-600",
 //   "medium-bus": "bg-indigo-600",
 //   elf: "bg-amber-600",
 };
