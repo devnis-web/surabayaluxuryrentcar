@@ -24,7 +24,7 @@
         font-family: Arial, Helvetica, sans-serif;
       }
       .hero-bg {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.48)), url("img/bg-new2.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.48)), url("img/bg-new3.png");
         background-position: center;
         background-size: cover;
       }
@@ -339,30 +339,92 @@
       </section>
 
       <!-- Partnership and payment -->
-      <section class="mx-auto grid max-w-6xl overflow-hidden px-5 pb-10 md:grid-cols-2 md:px-8">
-        <div class="flex min-h-56 flex-col items-center justify-center bg-[#1d5963] p-8 text-center text-white">
-          <h2 class="text-xl font-bold">Menerima Investor dan Kerjasama</h2>
-          <p class="mt-2 max-w-sm text-sm text-white/80">
-            Terbuka untuk kolaborasi dan kemitraan layanan rentcarportasi.
-          </p>
-          <a
-            href="https://wa.me/6288225666888?text=Halo%20Surabaya%20Luxury%20RentCar,%20saya%20tertarik%20untuk%20membahas%20kerjasama%20atau%20investasi."
-            target="_blank"
-            rel="noopener"
-            data-booking="Kerjasama / Investor"
-            class="mt-5 bg-black px-8 py-3 text-xs font-bold tracking-widest hover:bg-slate-800"
-            >HUBUNGI</a
+
+      <section class="mx-auto max-w-6xl px-4 py-8 sm:px-6 md:px-8 md:py-12">
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
+          <!-- Kerja Sama / Investor -->
+          <div
+            class="flex flex-col items-center justify-center rounded-2xl bg-[#1d5963] px-6 py-10 text-center text-white shadow-lg sm:px-8 md:py-12"
           >
-        </div>
-        <div class="shadow-card p-7">
-          <h2 class="text-center text-lg font-bold">Rekening Pembayaran</h2>
-          <div class="mx-auto mb-5 mt-3 h-0.5 w-20 bg-sky-700"></div>
-          <div class="space-y-6">
-            <div class="flex flex-wrap items-center justify-between gap-3">
-              <img src="img/logo-mandiri.webp" alt="Logo Mandiri" class="h-10" />
-              <div class="text-right">
-                <p class="text-2xl font-extrabold tracking-wide">1110026623914</p>
-                <p class="mt-1 text-sm">a/n YESMITA</p>
+            <span class="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-white/10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.5"
+                class="h-7 w-7"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4.5v15m7.5-7.5h-15M19.5 4.5h-15v15h15v-15Z"
+                />
+              </svg>
+            </span>
+
+            <h2 class="text-xl font-bold leading-snug sm:text-2xl">Menerima Investor dan Kerja Sama</h2>
+
+            <p class="mt-3 max-w-sm text-sm leading-relaxed text-white/80 sm:text-base">
+              Terbuka untuk kolaborasi, kemitraan, dan peluang investasi bersama Surabaya Luxury RentCar.
+            </p>
+
+            <a
+              href="https://wa.me/6288225666888?text=Halo%20Surabaya%20Luxury%20RentCar,%20saya%20tertarik%20untuk%20membahas%20kerjasama%20atau%20investasi."
+              target="_blank"
+              rel="noopener noreferrer"
+              data-booking="Kerjasama / Investor"
+              class="mt-7 inline-flex w-full max-w-xs items-center justify-center gap-2 rounded-lg bg-black px-6 py-3.5 text-sm font-bold tracking-wider text-white transition duration-300 hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#1d5963]"
+            >
+              HUBUNGI KAMI
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.8"
+                class="h-4 w-4"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Rekening Pembayaran -->
+          <div
+            class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8 md:p-10"
+          >
+            <div class="text-center">
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-sky-700">Informasi Pembayaran</p>
+
+              <h2 class="mt-2 text-xl font-bold text-slate-800 sm:text-2xl">Rekening Pembayaran</h2>
+
+              <div class="mx-auto mt-4 h-1 w-16 rounded-full bg-sky-700"></div>
+            </div>
+
+            <div class="mt-8 rounded-xl border border-slate-200 bg-slate-50 p-5 sm:p-6">
+              <div class="flex flex-col items-center gap-5 sm:flex-row sm:items-center sm:justify-between">
+                <div class="flex h-16 w-full items-center justify-center rounded-lg bg-white p-3 sm:h-14 sm:w-36">
+                  <img
+                    src="img/logo-mandiri.webp"
+                    alt="Logo Bank Mandiri"
+                    class="max-h-10 max-w-full object-contain"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="min-w-0 flex-1 text-center sm:text-right">
+                  <p class="text-xs font-medium text-slate-500">Nomor Rekening</p>
+
+                  <p class="mt-1 break-all text-xl font-extrabold tracking-wide text-slate-800 sm:text-2xl">
+                    1110026623914
+                  </p>
+
+                  <p class="mt-2 text-sm text-slate-600">
+                    Atas Nama
+                    <span class="font-bold text-slate-800">YESMITA</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
